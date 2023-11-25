@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>active</title>
+  <script src="js/html5shiv.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-capitalize ">
+
+  <!--                        header section                               -->
+  <header class="position-relative">
+    <nav class="navbar navbar-expand-md bg-light fixed-top ">
+      <div class="container-fluid">
+        <a href="#"><img src="assets/4afd71691d6be9d952da2f3c8ba6b348-removebg-preview1.png"></a>
+        <a class="navbar-brand text-style gradient-style text-uppercase border-end border-2 pe-2 fs-4 fw-normal"
+          href="">human-aids</a>
+        <a href="#nav-list" class="navbar-toggler" data-bs-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="collapse navbar-collapse " id="nav-list">
+          <ul class="navbar-nav fs-6 ">
+            <li class="nav-item ">
+              <a href="" class="nav-link navbar-style gradient-style">home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link navbar-style gradient-style">map</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <button class="nav-link dropdown-toggle border border-1 rounded-3" href="#" id="d-list"
+                data-bs-toggle="dropdown">
+                <span class="gradient-style">
+                  aid-fields
+                </span>
+
+              </button>
+              <ul class="dropdown-menu background-dropdown " aria-labelledby="d-list">
+                <li><a href="#" class="dropdown-item text-muted">medical</a></li>
+                <li><a href="#" class="dropdown-item text-muted">residence</a></li>
+                <li><a href="#" class="dropdown-item text-muted">educational</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a href="#" class="dropdown-item text-muted">Psychological</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link  navbar-style gradient-style disabled">funders</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto " role="search">
+            
+            <input class="form-control pe-5" type="search" placeholder="Search" aria-label="Search">
+            <a href="arabic.html" target="_blank"><span><i class="fa-solid fa-globe text-success fs-2 ms-3"></i></span></a>
+            <button class="btn btn-outline border gradient-style ms-3" type="submit">Search</button>
+            <button class="btn btn-outline border gradient-style ms-3" type="button" data-bs-toggle="modal"
+              data-bs-target="#login-form">
+              login
+            </button>
+
+            <div class="modal fade" id="login-form" data-bs-backdrop="static" tabindex="-1"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content ">
+                  <div class="modal-header  background-dropdown">
+                    <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Log In</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"
+                        aria-describedby="small-text">
+                      <label for="floatingInput" class="gradient-style">Email address</label>
+                      <small id="small-text" class="form-text text-muted fw-lighter text-lowercase">
+                        we are going to keep your privacy annonemous
+                      </small>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword" class="gradient-style">Password</label>
+                    </div>
+                    <div class="form-floating">
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                          checked />
+                        <label class="form-check-label gradient-style"
+                          style=".gradient-style:hover { text-shadow: #fff;}" for="flexSwitchCheckChecked">remember
+                          me</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn text-dark background-dropdown border border-dark fs-4"
+                      data-bs-dismiss="modal">
+                      Close
+                    </button>
+
+                    <button type="button" class="btn text-dark background-dropdown border border-dark fs-4 ">Log
+                      In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--                      slider section                                -->
+  <main>
+    <div id="img-slider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#img-slider" data-bs-slide-to="0" class="active bg-dark"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#img-slider" data-bs-slide-to="1" class="bg-dark"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#img-slider" data-bs-slide-to="2" class="bg-dark"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#img-slider" data-bs-slide-to="3" class="bg-dark"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel-img bg-img-1 w-100">
+          <div class="carousel-caption background-dropdown d-block text-dark rounded-3">
+            <h5 class="fs-2 fw-bold">medical teams </h5>
+            <p class="fs-6">in all of different sections, different contexts and situations in which our teams respond
+              to provide care.
+
+            </p>
+            <button class="btn btn-dark border border-1 rounded-3 background-dropdown text-light fs-5">Donate</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel-img bg-img-2 w-100">
+          <div class="carousel-caption background-dropdown text-dark d-block  rounded-3">
+            <h5 class="fs-2 fw-bold">psycolgy aids</h5>
+            <p class="fs-6 ">including clinical psychology, cognitive psychology, behavioral psychology,and
+              biopsychology.</p>
+            <button class="btn btn-dark border border-1 rounded-3 background-dropdown text-light fs-5">Donate</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel-img bg-img-3 w-100">
+          <div class="carousel-caption background-dropdown text-dark d-block  rounded-3">
+            <h5 class="fs-2 fw-bold">midicine</h5>
+            <p class="fs-6">pharmacy follows every center,containig basic and most important midicine.</p>
+            <button class="btn btn-dark border border-1 rounded-3 background-dropdown text-light fs-5">Donate</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel-img bg-img-4 w-100">
+          <div class="carousel-caption background-dropdown text-dark  d-block  rounded-3">
+            <h5 class="fs-2 fw-bold">schools</h5>
+            <p class="fs-6 ">kindergartens and elementary schools.</p>
+            <button class="btn btn-dark border border-1 rounded-3 background-dropdown text-light fs-5">Donate</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev text-dark" data-bs-target="#img-slider" data-bs-slide="prev">
+        <span><i class="fa-solid fa-angle-left fs-2" aria-hidden="true"></i></span>
+
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next text-dark" data-bs-target="#img-slider" data-bs-slide="next">
+
+        <span><i class="fa-solid fa-angle-right fs-2" aria-hidden="true"></i></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </main>
+
+  <div class="empty-div container-fluid"></div>
+
+  <!--                       contacts section                            -->
+  <div class="horizontal-accordion accordion-flush fixed-bottom position-fixed p" id="accordionFlushExample">
+    <div class="accordion-item background-dropdown d-inline-block"
+      style="writing-mode: vertical-lr;  text-orientation: mixed; z-index:100">
+      <h2 class="accordion-header d-inline-block" style=" writing-mode: vertical-lr;  text-orientation: mixed;">
+        <button class="accordion-button collapsed background-dropdown padding-contacts fw-bold text-muted" type="button"
+          data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+          aria-controls="flush-collapseOne">
+          contacts &nbsp;<i class="fa-solid fa-angle-right fs-2"></i>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <ul class="nav mb-3 mx-2">
+            <li class="mt-4"><a href="#"><img src="assets/facebook.svg" alt=""></a></li>
+            <li><a href="#"><img src="assets/whatsapp.svg" alt=""></a></li>
+            <li><a href="#"><img src="assets/twitter-x.svg" alt=""></a></li>
+            <li><a href="#"><img src="assets/instagram.svg" alt=""></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--                        aims and visions                           -->
+  <section>
+    <div class="container-fluid p-4 background-dropdown ">
+      <span class="display-4 heading-colored">aims and vision</span>
+      <p class="text-dark">
+        Human Aid & Advocacy is an international HA,
+        supporting survivors of war and persecution through access to sustainable aid programmes,
+        while addressing the real causes of conflict.
+        we are wishing To see a world where believers can worship Allah free from the fear of war and persecution.
+      </p>
+      <button class="btn btn-outline border border-1 border-dark rounded-3 ">Learn More </button>
+    </div>
+  </section>
+
+  <div class="empty-div container-fluid"></div>
+
+  <!--                         contributers accordion                     -->
+  <section class="container-fluid p-4 ">
+    <span class=" display-4 heading-colored">
+      our basic contributers
+    </span>
+    <div class="accordion container-fluid" id="contributers">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+            data-bs-target="#firstAccordion" aria-expanded="false" aria-controls="firstAccordion">
+            <a href="#" class=""><img src="assets/children.svg" class=""></a>
+          </button>
+        </h2>
+        <div id="firstAccordion" class="accordion-collapse collapse" data-bs-parent="#contributers">
+          <div class="accordion-body">
+            <strong>We work in the hardest-to-reach places, where it’s toughest to be a child.</strong> Save the
+            Children was the first global movement for children, boldly declaring that children have rights.
+            The scale of crisis in the world has increased exponentially in recent years.
+            There are more children living in conflict and war zones now than at any time in the past 20 years, as well
+            as more child refugees. Natural disasters are not only more frequent, but more severe.
+            As always, children in crisis are among the most vulnerable.
+            As the world leader in protecting children from the physical and emotional wounds of war, Save the Children
+            been a lifeline for families fleeing violence in<code> Syria, Venezuela, Myanmar </code> and dozens of other
+            crises around the world.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#secondAccordion" aria-expanded="false" aria-controls="secondAccordion">
+            <a href="#"><img src="assets/course.webp" alt=""></a>
+          </button>
+        </h2>
+        <div id="secondAccordion" class="accordion-collapse collapse" data-bs-parent="#contributers">
+          <div class="accordion-body">
+            <strong>Complex problems require comprehensive, integrated solutions. </strong>Corus International is a
+            global family of changemakers that envisions a healthy world forever flourishing in dignity and justice.
+
+            Our mission is to urgently end poverty, suffering and injustice wherever they afflict humanity, with
+            enduring passion, partnership and expertise.
+
+            We seek to end human suffering and injustice by working with the world's most vulnerable people to break the
+            cycle of poverty and lead healthy lives.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#thirdAccordion" aria-expanded="false" aria-controls="thirdAccordion">
+            <a href="#"><img src="assets/DAREF_logoRGB.png" alt=""></a>
+          </button>
+        </h2>
+        <div id="thirdAccordion" class="accordion-collapse collapse" data-bs-parent="#contributers">
+          <div class="accordion-body">
+            <strong>The Diabetes Action Research and Education Foundation (Diabetes Action).</strong> a non-profit
+            501(c)3 organization founded in 1990, is committed to the prevention and treatment of diabetes and to the
+            funding of innovative, promising research aimed at finding a cure for diabetes and diabetes related
+            complications.
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#forthAccordion" aria-expanded="false" aria-controls="thirdAccordion">
+            <a href="#"><img src="assets/AutismSociety_Logo_FullColor.svg" alt=""></a>
+          </button>
+        </h2>
+        <div id="forthAccordion" class="accordion-collapse collapse" data-bs-parent="#contributers">
+          <div class="accordion-body">
+            <strong>The connection is you.</strong> We create connections, empowering everyone in the Autism community
+            with the resources needed to live fully.
+            Creating a world where everyone in the Autism community is connected to the support they need, when they
+            need it.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="empty-div container-fluid"></div>
+
+  <!--                          fixed attachment background               -->
+  <section class="container">
+    <div class="ref-img"></div>
+  </section>
+
+  <div class="empty-div"></div>
+
+
+  <!--                          subjects cards                            -->
+  <section class="container-fluid background-dropdown pb-4">
+    <h2 class="display-4 ms-2 mb-2 d-inline-block heading-colored">
+      our subjects
+    </h2>
+
+    <div class="container ms-5 row row-cols-lg-3 row-cols-md-2  row-cols-sm-1 row-cols-1 g-4">
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/sponsership.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">sponsorships</h5>
+            <p class="card-text">
+              More independence and safe manners in everyday life
+              Enjoy education
+              Identifying skills that need to be developed
+              Language competence
+              Better school performance
+              Better opportunities for labor market integration
+              mobility
+            </p>
+            <div class="position-absolute bottom-0">
+              <small class="text-body-secondary">learn more</small>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/schools.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">bulding school</h5>
+            <p class="card-text">
+              Children from the age of 2 to 5 were cared for in the daycare centers. The schools ran from 1st to 6th
+              grade.
+              There the children learned math, geography, painting and standard Arabic.
+
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">learn more</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/hospital1.jpg" class="card-img-top  " alt="...">
+          <div class="card-body">
+            <h5 class="card-title">hospitals</h5>
+            <p class="card-text">
+              The hospital needs everything a hospital needs: equipment, beds, salaries for employees, instruments,
+              medicines, medical supplies, and more.
+              We are therefore also interested in regular donations in kind.
+              When a hospital renews its equipment, we are grateful for any information.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">learn more</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/ernahrung.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title mt-3">food baskets</h5>
+            <p class="card-text">
+              Many internally displaced people have no opportunity to cook for themselves.
+              That's why our local partners have a plan in which they take turns supplying certain people with good,
+              cooked food.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">learn more</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/water.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">water supply</h5>
+            <p class="card-text">
+              Access to clean water is a human right.
+              People, animals and plants need water to live.
+              People need water for drinking, for hygiene, for growing food and for caring for animals.
+              Water is the most important food.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">learn more</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/clothes.jpg" class="card-img-top " alt="...">
+          <div class="card-body">
+            <h5 class="card-title mt-3">Distribution of winter clothing</h5>
+            <p class="card-text">
+              Soon it will rain again. The many internally displaced people need a change of clothes.
+              We call this relief effort “wardrobe,” even though it doesn’t quite fit.
+              The families who need help in winter 2019/20 have nothing left, including a wardrobe.
+              They are refugees in their own country, i.e. internal refugees.
+
+              They are mostly single women, old people, children and people with disabilities.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">learn more</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/small-house.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title mt-5">small houses </h5>
+            <p class="card-text">
+              Some live with relatives. Others live in camps, sleep in the open air or in tents.
+              It rains from November at the latest, during the day it is 10° C, at night the temperature drops to below
+              5° C.
+              The rain penetrates into the tents. That's why we started building a waterproof refugee camp
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">learn more</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/Vocationaltraining.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title mt-5">Vocational training</h5>
+            <p class="card-text">
+              Many people in Syria have lost their jobs or their breadwinner.
+              In short workshops, people can now learn to support themselves through work.
+              They learn accounting, how to use computers and get an introduction to their profession.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">learn more</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/Medizinbedarf.jpg" class="card-img-top h-50" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">medicine supplies</h5>
+            <p class="card-text">
+              Ambulances, surgical instruments, beds and other hospital equipment, medical materials,
+              surgical materials, X-ray and ultrasound machines, disposable materials and more are needed.
+              People should have the chance to stay in their homeland. That's why HA helps directly in crisis areas.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">learn more</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="empty-div"></div>
+  
+
+  <!--                            special cards                            -->
+  <h2 class="display-4 ms-4 mb-2 d-inline-block heading-colored">
+    special thanks this year
+  </h2>
+  <section class="container ">
+    
+    <div class="row justify-content-between g-4">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card card2 shadow">
+          <img src="assets/images.png" class="card-img h-100" alt="...">
+          <div class="card-img-overlay over">
+            <h5 class="card-title display-6 text-light">
+              Of volunteers</h5>
+            <p class="card-text text-light ">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>january, 2022</span> &nbsp; 
+            </p>
+            <div class="card-image ">
+              <img src="assets/images.png" class="h-50 w-75 rounded-end-circle" alt="">
+            </div>
+            <div class="d-flex justify-content-around mb-1">
+              <span class="text-light">salam alsabra </span>
+              <span class="text-light">volunteered north of syria</span>
+            </div>
+          </div>
+          
+              
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card card2 shadow">
+          <img src="assets/thoughts.jpg" class="card-img h-100" alt="...">
+          <div class="card-img-overlay over">
+            <h5 class="card-title display-6 text-light">
+              Of projects initiator</h5>
+            <p class="card-text text-light mt-1">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>january, 2022</span> &nbsp; 
+            </p>
+            <div class="card-image ">
+              <img src="assets/thoughts.jpg" class="h-50 w-75 rounded-end-circle" alt="">
+            </div>
+            <div class="d-flex justify-content-around mt-2">
+              <span class="text-light">bassel shammoot</span>
+              <span class="text-light">designed 100 projects</span>
+            </div>
+          </div>
+          
+              
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="card card2 shadow">
+          <img src="assets/3514a5a6c1762e96a24c2d21390febe7.jpg" class="card-img h-100" alt="...">
+          <div class="card-img-overlay over">
+            <h5 class="card-title display-6 text-light">
+              Of donators</h5>
+            <p class="card-text text-light">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>november, 2021</span> &nbsp; 
+            </p>
+            <div class="card-image ">
+              <img src="assets/3514a5a6c1762e96a24c2d21390febe7.jpg" class=" h-50 w-75 rounded-end-circle" alt="">
+            </div>
+            <div class="d-flex justify-content-around mt-5">
+              <span class="text-light">al hikma</span>
+              <span class="text-light">donated children's winter clothes</span>
+            </div>
+          </div>
+          
+              
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="empty-div"></div>
+
+  <!--                             latest news cards                           -->
+  <h2 class="display-4 ms-4 mb-2 d-inline-block heading-colored">
+    our latest news
+  </h2>
+  <section class="container ">
+    
+    <div class="card c shadow-lg mb-3 rounded-3  ">
+      <div class="row g-0">
+        <div class="col-md-5 position-relative ">
+          <div class="card-image-corners">
+          <img src="assets/childhood.jpg" class="img-fluid rounded-start " alt="...">
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="card-body ">
+            <h5 class="card-title heading-colored fs-2">When it comes to protecting children in war zones</h5>
+            <p class="card-text "><small class="text-muted">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>oktober, 2023</span> &nbsp;
+            </small></p>
+            <div class="card-div bg-success rounded-3 "></div>
+            <p class="card-text mb-2">Imagine that you are trapped with your family in a town under siege.
+              Food and fuel are running out. Your children are hungry, cold and terrified by air raids and artillery. 
+              </p>
+            <p class="card-text">
+              <a href=""  class=" link-underline link-underline-opacity-0 text-success">read more &rarr;</a>  
+            </p>
+            <div class="text-info">
+              <a href="" class="text-info link-underline link-underline-opacity-0 "><i class="fa-regular fa-hashtag"></i><span>war</span></a>&nbsp;<a href="" class="link-underline link-underline-opacity-0 text-info"><i class="fa-regular fa-hashtag"></i><span>medical-support</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3 shadow-lg c rounded-3">
+      <div class="row g-0">
+        <div class="col-md-7">
+          <div class="card-body ">
+            <h5 class="card-title heading-colored fs-2">
+              What conditions are deported Afghans experiencing?</h5>
+            <p class="card-text "><small class="text-muted">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>september, 2023</span> &nbsp;
+            </small></p>
+            <div class="card-div bg-success rounded-3 mb-1"></div>
+            <p class="card-text mb-3">
+              The situation for women and girls in Afghanistan is exceptionally challenging
+              The world cannot afford to lose attention on Afghanistan, which is still reeling from decades of conflict, economic crisis and recent devastating earthquakes.</p>
+            <p class="card-text">
+              <a href=""  class=" link-underline link-underline-opacity-0 text-success">read more &rarr;</a>  
+            </p>
+            <div class="text-info">
+              <a href="" class="text-info link-underline link-underline-opacity-0 "><i class="fa-regular fa-hashtag"></i><span>natural-disasters</span></a>&nbsp;<a href="" class="link-underline link-underline-opacity-0 text-info"><i class="fa-regular fa-hashtag"></i><span>immediate-help</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 position-relative ">
+          <div class="card-image-corners1">
+          <img src="assets/afghanistan.webp" class="img-fluid rounded-end " alt="...">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="card c shadow-lg mb-3 rounded-3  ">
+      <div class="row g-0">
+        <div class="col-md-5 position-relative ">
+          <div class="card-image-corners">
+          <img src="assets/myanmar_crisis_rohingya_refugee_father_and_son_in_bangladesh.jpg" class="img-fluid rounded-start " alt="...">
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="card-body ">
+            <h5 class="card-title heading-colored fs-2">Myanmar (burma)crisis briefing</h5>
+            <p class="card-text "><small class="text-muted">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>April, 2023</span> &nbsp;
+            </small></p>
+            <div class="card-div bg-success rounded-3 mb-1"></div>
+            <p class="card-text mb-2">
+              Our mission is to help people whose lives and livelihoods are shattered by conflict and disaster to recover and gain control of their futures.
+              Myanmar is more crucial than ever as people struggle to rebuild their lives in the wake of natural disaster and internal conflict.
+            </p>
+            <p class="card-text">
+              <a href=""  class=" link-underline link-underline-opacity-0 text-success">read more &rarr;</a>  
+            </p>
+            <div class="text-info">
+              <a href="" class="text-info link-underline link-underline-opacity-0 "><i class="fa-regular fa-hashtag"></i><span>war</span></a>&nbsp;<a href="" class="link-underline link-underline-opacity-0 text-info"><i class="fa-regular fa-hashtag"></i><span>medical-support</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="empty-div"></div>
+
+  <!--                               contacts circles                              -->
+ 
+  <h2 class="display-4 ms-4 mb-4 d-inline-block heading-colored">
+    you can follow us 
+  </h2>
+  <section class="container d-flex justify-content-around g-0">
+    <a href="https://facebook.com" target="_blank" class="d-block">
+    <div class="rounded-circle background-dropdown contacts" style="background-image: url('assets/icons8-facebook-100.png');">
+      
+    </div></a>
+
+    <a href="https://twitter.com" target="_blank" class="d-block">
+    <div class="rounded-circle background-dropdown contacts" style="background-image: url('assets/twitter_5969020.png');">
+      
+    </div></a>
+    <a href="https://youtube.com" target="_blank" class="d-block">
+    <div class="rounded-circle background-dropdown contacts" style="background-image: url('assets/2448085_334189-P9WEH4-125.jpg');"></div>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="d-block">
+    <div class="rounded-circle background-dropdown contacts" style="background-image: url('assets/linkedin_145807.png');"></div>
+    </a>
+    <a href="https://instagram.com" target="_blank" class="d-block">
+    <div class="rounded-circle background-dropdown contacts" style="background-image: url('assets/instagram-logo_4103007.png');"></div>
+    </a>
+    
+  
+    
+  </section>
+  
+  <section class="container   d-flex justify-content-around g-7">
+    <div class="contacts1 me-3"></div>
+    <div class="contacts2 mx-3"></div>
+    <div class="contacts3 mx-3"></div>
+    <div class="contacts4 mx-3"></div>
+    <div class="contacts5 ms-3"></div> 
+  </section>
+
+  <div class="empty-div"></div>
+  
+  <!--                               footer                                           -->
+
+  <section class=" container h-25 border border-top-0 border-end-0 border-bottom-0 background-dropdown ">
+    <div class="container d-flex justify-content-around mt-5">
+    <h2 class=" text-muted mt-3">
+      Donate now to make a concrete impact
+    </h2>
+    <button class="btn px-5 my-2  btn-dark border border-1 rounded-3 background-dropdown text-light btn-lg fs-4">Donate <img src="assets/icons8-heart-48.png" alt=""></button>
+   
+  </div>
+  
+  </section>
+   <div class="empty-div"></div>
+  <section class="container-fluid  background-dropdown">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-item-center">
+        <div class="col-5  ">
+          
+          <a href="https://googlemaps.com" target="_blank">
+            <img src="assets/icons8-map-marker-100.png" alt="" class="center d-block">
+          </a>
+        </div>
+        <div class="col-5">
+          <a href="https://efax.com" target="_blank">
+            <img src="assets/icons8-fax-100.png" alt="" class="center d-block"></a>
+        </div>
+
+      </div>
+      <div class="row  d-flex  justify-content-around">
+        <div class="col-4  mt-3">
+          <a href="" class="text-muted fs-3"><span>afrika</span></a>
+        </div>
+        <div class="col-4 fs-3 text-muted ">
+          <span >1-408-999 8888</span>
+        </div>
+      </div>
+      <div class="row  d-flex  justify-content-around ">
+        <div class="col-4 ">
+          <a href="" class="text-muted fs-3 "><span >asia</span></a>
+        </div>
+        <div class="col-4 fs-3 text-muted">
+          <span>1-212-222 8888</span>
+        </div>
+      </div>
+      <div class="row  d-flex   justify-content-around">
+        <div class="col-4 mb-5 border border-2 border-danger">
+          <a href="" class="text-muted fs-3"><span>Eastern Mediterranean</span></a>
+        </div>
+        <div class="col-4 mb-5 text-muted fs-3 border border-danger border-2">
+          <span>1-212-999 8888</span>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="container-fluid background-dropdown">
+      <span>&copy; reserved for HA</span>
+    </div>
+  
+    
+  <script src="js/script.js">
+
+  </script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
+  <script>
+  
+  </script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

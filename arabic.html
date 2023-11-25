@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="arabic"  dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>active</title>
+  <script src="js/html5shiv.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-capitalize ">
+
+  <!--                        header section                               -->
+  <header class="position-relative">
+    <nav class="navbar navbar-expand-md bg-light fixed-top ">
+      <div class="container-fluid">
+        <a href="#"><img src="assets/4afd71691d6be9d952da2f3c8ba6b348-removebg-preview1.png"></a>
+        <a class="navbar-brand text-style gradient-style text-uppercase border-start border-2 ps-2 fs-4 fw-normal"
+          href="">مساعدات انسانية</a>
+        <a href="#nav-list" class="navbar-toggler" data-bs-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="collapse navbar-collapse " id="nav-list">
+          <ul class="navbar-nav fs-6 ">
+            <li class="nav-item ">
+              <a href="" class="nav-link navbar-style gradient-style">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link navbar-style gradient-style">الخرائط</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <button class="nav-link dropdown-toggle border border-1 rounded-3" href="#" id="d-list"
+                data-bs-toggle="dropdown">
+                <span class="gradient-style">
+                  أنواع المساعدات
+                </span>
+
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end background-dropdown " aria-labelledby="d-list">
+                <li><a href="#" class="dropdown-item text-muted items" >طبية</a></li>
+                <li><a href="#" class="dropdown-item text-muted items">سكن</a></li>
+                <li><a href="#" class="dropdown-item text-muted items">تعليمي</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a href="#" class="dropdown-item text-muted items">نفسية</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link  navbar-style gradient-style disabled">المموّلون</a>
+            </li>
+          </ul>
+          <form class="d-flex me-auto " role="search">
+            
+            <input class="form-control ps-5" type="search" placeholder="Search" aria-label="Search">
+            <a href="index.html" target="_blank"><span><i class="fa-solid fa-globe text-success fs-2 pt-2 mx-3"></i></span></a>
+            <button class="btn btn-outline border gradient-style ms-3" type="submit">البحث</button>
+            <button class="btn btn-outline border gradient-style ms-3 widthofbtn" type="button" data-bs-toggle="modal"
+              data-bs-target="#login-form">
+              تسجيل الدخول
+            </button>
+
+            <div class="modal fade" id="login-form" data-bs-backdrop="static" tabindex="-1"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content ">
+                  <div class="modal-header  background-dropdown">
+                    <h1 class="modal-title fs-5 text-dark items" id="exampleModalLabel">تسجيل الدخول</h1>
+                    <button type="button" class="btn-close  ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"
+                        aria-describedby="small-text">
+                      <label for="floatingInput" class="gradient-style d-inline-block items" style="width: 450px;">اسم المستخدم</label>
+                      <small id="small-text" class="form-text text-muted fw-lighter text-lowercase items ">
+                        نحافظ على الخصوصية 
+                      </small>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword" class="gradient-style d-inline-block items" style="width: 450px;" >كلمة المرور</label>
+                    </div>
+                    <div class="form-floating">
+                      <div class="form-check form-switch " >
+                        <label class="form-check-label me-5 gradient-style "
+                          style=".gradient-style:hover { text-shadow: #fff;}" for="flexSwitchCheckChecked">
+                          تذكرني
+                        </label>
+                        <input style="float: right;" class="form-check-input"  type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                          checked />
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn text-dark background-dropdown border border-dark fs-4 ">
+                      تسجيل الدخول
+                    </button>
+                    <button type="button" class="btn text-dark background-dropdown border border-dark fs-4"
+                      data-bs-dismiss="modal">
+                      اغلاق
+                    </button>
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--                      slider section                                -->
+  <main>
+    <div id="img-slider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#img-slider" data-bs-slide-to="0" class="active bg-dark"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#img-slider" data-bs-slide-to="1" class="bg-dark"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#img-slider" data-bs-slide-to="2" class="bg-dark"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#img-slider" data-bs-slide-to="3" class="bg-dark"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel-img bg-img-1 w-100">
+          <div class="carousel-caption background-dropdown d-block text-dark rounded-3">
+            <h5 class="fs-2 fw-bold">الفرق الطبية </h5>
+            <p class="fs-6">
+              في جميع الأقسام المختلفة والسياقات والمواقف المختلفة التي تستجيب فيها فرقنا
+              لتوفير الرعاية.
+            </p>
+            <button class="btn btn-dark border border-1 rounded-3 background-dropdown text-light fs-5">تبرع</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel-img bg-img-2 w-100">
+          <div class="carousel-caption background-dropdown text-dark d-block  rounded-3">
+            <h5 class="fs-2 fw-bold">المساعدة النفسية</h5>
+            <p class="fs-6 ">
+              بما في ذلك علم النفس السريري، وعلم النفس المعرفي، وعلم النفس السلوكي، و
+              علم النفس الحيوي.
+            </p>
+            <button class="btn btn-dark border border-1 rounded-3 background-dropdown text-light fs-5">تبرع</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel-img bg-img-3 w-100">
+          <div class="carousel-caption background-dropdown text-dark d-block  rounded-3">
+            <h5 class="fs-2 fw-bold">الأدوية</h5>
+            <p class="fs-6">
+            الصيدلية تتبع كل مركز يحتوي على الأدوية الأساسية والمهمة.
+            </p>
+            <button class="btn btn-dark border border-1 rounded-3 background-dropdown text-light fs-5">تبرع</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel-img bg-img-4 w-100">
+          <div class="carousel-caption background-dropdown text-dark  d-block  rounded-3">
+            <h5 class="fs-2 fw-bold">المدارس</h5>
+            <p class="fs-6 ">رياض الأطفال ومدارس المراحل الأولى.</p>
+            <button class="btn btn-dark border border-1 rounded-3 background-dropdown text-light fs-5">تبرع</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev text-dark" data-bs-target="#img-slider" data-bs-slide="prev">
+        <span><i class="fa-solid fa-angle-left fs-2" aria-hidden="true"></i></span>
+
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next text-dark" data-bs-target="#img-slider" data-bs-slide="next">
+
+        <span><i class="fa-solid fa-angle-right fs-2" aria-hidden="true"></i></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </main>
+
+  <div class="empty-div container-fluid"></div>
+
+  <!--                       contacts section                            -->
+  <div class="horizontal-accordion accordion-flush fixed-bottom position-fixed p" id="accordionFlushExample">
+    <div class="accordion-item background-dropdown d-inline-block"
+      style="writing-mode: vertical-lr;  text-orientation: mixed; z-index:100">
+      <h2 class="accordion-header d-inline-block" style=" writing-mode: vertical-lr;  text-orientation: mixed;">
+        <button class="accordion-button collapsed background-dropdown padding-contacts fw-bold text-muted" type="button"
+          data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+          aria-controls="flush-collapseOne">
+          تواصل معنا &nbsp;<i class="fa-solid fa-angle-left fs-2"></i>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <ul class="nav mb-3 mx-2">
+            <li class=""><a href="#"><img src="assets/facebook.svg" alt=""></a></li>
+            <li><a href="#"><img src="assets/whatsapp.svg" alt=""></a></li>
+            <li><a href="#"><img src="assets/twitter-x.svg" alt=""></a></li>
+            <li><a href="#"><img src="assets/instagram.svg" alt=""></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--                        aims and visions                           -->
+  <section>
+    <div class="container-fluid p-4 background-dropdown ">
+      <span class="display-4 heading-colored">الهدف والرؤية</span>
+      <p class="text-dark">
+        منظمة HA الدولية للمساعدات الإنسانية ،تدعم الناجين من الحرب والاضطهاد من خلال الوصول إلى برامج المساعدة المستدامة، مع معالجة الأسباب الحقيقية للحالات.
+ نتمنى أن نرى عالماً يستطيع فيه المؤمنون عبادة الله دون خوف من الحرب والاضطهاد.
+      </p>
+      <button class="btn btn-outline border border-1 border-dark rounded-3 "> قراءة المزيد</button>
+    </div>
+  </section>
+
+  <div class="empty-div container-fluid"></div>
+
+  <!--                         contributers accordion                     -->
+  <section class="container-fluid p-4 ">
+    <span class=" display-4 heading-colored">
+      المساهمين الأساسيين
+    </span>
+    <div class="accordion container-fluid" id="contributers" dir="ltr">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#firstAccordion" aria-expanded="false" aria-controls="firstAccordion">
+            <a href="#" class=""><img src="assets/children.svg" class=""></a>
+          </button>
+        </h2>
+        <div id="firstAccordion" class="accordion-collapse collapse" data-bs-parent="#contributers">
+          <div class="accordion-body">
+            <strong>حركة عالمية من أجل الأطفال، أعلنت بجرأة أن الأطفال لهم حقوق.</strong>
+              لقد تزايد حجم الأزمات في العالم بشكل كبير في السنوات الأخيرة.
+              كما أن عدد الأطفال الذين يعيشون في مناطق الصراع والحرب الآن أكبر من أي وقت مضى خلال العشرين سنة الماضية
+              مع زيادة عدد الأطفال اللاجئين. والكوارث الطبيعية ليست أكثر تواترا فحسب، بل هي أكثر خطورة.
+              وكما هو الحال دائمًا، فإن الأطفال الذين يعانون من الأزمات هم من بين الفئات الأكثر ضعفًا.
+              باعتبارها الشركة الرائدة عالميًا في حماية الأطفال من الجروح الجسدية والعاطفية للحرب، منظمة إنقاذ الطفولة
+              لقد كان بمثابة شريان حياة للعائلات الهاربة من العنف في سوريا وفنزويلا وميانمار وعشرات البلدان الأخرى
+              الأزمات في جميع أنحاء العالم.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#secondAccordion" aria-expanded="false" aria-controls="secondAccordion">
+            <a href="#"><img src="assets/course.webp" alt=""></a>
+          </button>
+        </h2>
+        <div id="secondAccordion" class="accordion-collapse collapse" data-bs-parent="#contributers">
+          <div class="accordion-body">
+            <strong>تتطلب المشاكل المعقدة حلولاً شاملة ومتكاملة. </strong>كوروس انترناشيونال هي
+            عائلة عالمية من صانعي التغيير تتصور عالمًا صحيًا يزدهر إلى الأبد بكرامة وعدالة.
+
+            مهمتنا هي إنهاء الفقر والمعاناة والظلم بشكل عاجل أينما ابتليت البشرية
+            العاطفة الدائمة والشراكة والخبرة.
+
+            نسعى إلى إنهاء المعاناة الإنسانية والظلم من خلال العمل مع الأشخاص الأكثر ضعفًا في العالم لكسر الحصار
+            دورة الفقر ويعيشون حياة صحية.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#thirdAccordion" aria-expanded="false" aria-controls="thirdAccordion" >
+            <a href="#"><img src="assets/DAREF_logoRGB.png" alt=""></a>
+          </button>
+        </h2>
+        <div id="thirdAccordion" class="accordion-collapse collapse" data-bs-parent="#contributers">
+          <div class="accordion-body">
+            <strong>مؤسسة أبحاث وتعليم مرض السكري (عمل السكري).</strong> 
+            غير ربحية
+            منظمة 501(ج)3 تأسست عام 1990، وهي ملتزمة بالوقاية من مرض السكري وعلاجه
+            تمويل الأبحاث المبتكرة والواعدة التي تهدف إلى إيجاد علاج لمرض السكري والأمراض المرتبطة به
+            المضاعفات.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#forthAccordion" aria-expanded="false" aria-controls="thirdAccordion">
+            <a href="#"><img src="assets/AutismSociety_Logo_FullColor.svg" alt=""></a>
+          </button>
+        </h2>
+        <div id="forthAccordion" class="accordion-collapse collapse" data-bs-parent="#contributers">
+          <div class="accordion-body">
+            <strong>الاتصال هو أنت.</strong> نقوم بإنشاء اتصالات وتمكين الجميع في مجتمع التوحد
+            بالموارد اللازمة للعيش بشكل كامل.
+            خلق عالم يرتبط فيه كل فرد في مجتمع التوحد بالدعم الذي يحتاجه، عندما يحتاجون إليه
+            في حاجة إليها.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="empty-div container-fluid"></div>
+
+  <!--                          fixed attachment background               -->
+  <section class="container">
+    <div class="ref-img"></div>
+  </section>
+
+  <div class="empty-div"></div>
+
+
+  <!--                          subjects cards                            -->
+  <section class="container-fluid background-dropdown pb-4">
+    <h2 class="display-4 ms-2 mb-2 d-inline-block heading-colored">
+      مواضيعنا
+    </h2>
+
+    <div class="container me-5 row row-cols-lg-3 row-cols-md-2  row-cols-sm-1 row-cols-1 g-4">
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/sponsership.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              الرعاية
+            </h5>
+            <p class="card-text">
+              المزيد من الاستقلالية والأخلاق الآمنة في الحياة اليومية
+              استمتع بالتعليم
+              تحديد المهارات التي تحتاج إلى تطوير
+              الكفاءة اللغوية
+              أداء مدرسي أفضل
+              فرص أفضل للتكامل في سوق العمل
+              إمكانية التنقل
+            </p>
+            <div class="position-absolute bottom-0">
+              <small class="text-body-secondary">قراءة المزيد</small>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/schools.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              بناء المدارس
+            </h5>
+            <p class="card-text">
+              تتم رعاية الأطفال من سن 2 إلى 5 سنوات في مراكز الرعاية النهارية. المدارس من الأول إلى السادس
+              درجة.
+              وهناك تعلم الأطفال الرياضيات والجغرافيا والرسم واللغة العربية الفصحى.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">قراءة المزيد</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/hospital1.jpg" class="card-img-top  " alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              المستشفيات
+            </h5>
+            <p class="card-text">
+              يحتاج المستشفى إلى كل ما يحتاجه المستشفى: المعدات، والأسرة، ورواتب الموظفين، والأدوات،
+              الأدوية والمستلزمات الطبية وغيرها.
+              لذلك نحن مهتمون أيضًا بالتبرعات العينية المنتظمة.
+              عندما يقوم المستشفى بتجديد معداته، نحن ممتنون لأية معلومات.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">قراءة المزيد</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/ernahrung.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title mt-3">
+              سلال الغذاء
+            </h5>
+            <p class="card-text">
+              ولا تتاح للعديد من النازحين داخلياً الفرصة لطهي الطعام لأنفسهم.
+              ولهذا السبب لدى شركائنا المحليين خطة يتناوبون فيها على تزويد أشخاص معينين بالخير،
+              الطعام المطبوخ.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">قراءة المزيد</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/water.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              إمدادات المياه
+            </h5>
+            <p class="card-text">
+              إن الحصول على المياه النظيفة هو حق من حقوق الإنسان.
+              يحتاج الناس والحيوانات والنباتات إلى الماء ليعيشوا.
+              يحتاج الناس إلى الماء للشرب والنظافة وزراعة الغذاء ورعاية الحيوانات.
+              الماء هو الغذاء الأكثر أهمية.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">قراءة المزيد</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/clothes.jpg" class="card-img-top " alt="...">
+          <div class="card-body">
+            <h5 class="card-title mt-3">
+              توزيع الملابس الشتوية
+            </h5>
+            <p class="card-text">
+              قريبا سوف تمطر مرة أخرى. ويحتاج العديد من النازحين داخلياً إلى تغيير ملابسهم.
+              ونحن نطلق على جهود الإغاثة هذه اسم "خزانة الملابس"، على الرغم من أنها لا تناسبها تمامًا.
+              العائلات التي تحتاج إلى المساعدة في شتاء 2019/20 لم يبق لها شيء، بما في ذلك خزانة الملابس.
+              إنهم لاجئون في وطنهم، أي لاجئون داخليون.
+
+              وأغلبهم من النساء العازبات وكبار السن والأطفال والأشخاص ذوي الإعاقة.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">قراءة المزيد</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/small-house.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title mt-5">
+              المنازل الصغيرة
+            </h5>
+            <p class="card-text">
+              ويعيش البعض مع أقاربهم. ويعيش آخرون في مخيمات، وينامون في الهواء الطلق أو في الخيام.
+              تهطل الأمطار اعتبارًا من شهر نوفمبر على أقصى تقدير، وتكون درجة الحرارة خلال النهار 10 درجات مئوية، وتنخفض درجة الحرارة ليلًا إلى أقل من ذلك
+              5 درجة مئوية.
+              المطر يخترق الخيام. ولهذا السبب بدأنا في بناء مخيم للاجئين مقاوم للمياه
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">قراءة المزيد</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/Vocationaltraining.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title mt-5">التدريب المهني</h5>
+            <p class="card-text">
+              لقد فقد العديد من الأشخاص في سوريا وظائفهم أو معيلهم.
+              ومن خلال ورش العمل القصيرة، يمكن للأشخاص الآن أن يتعلموا كيفية إعالة أنفسهم من خلال العمل.
+              ويتعلمون المحاسبة وكيفية استخدام أجهزة الكمبيوتر والحصول على مقدمة لمهنتهم.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">قراءة المزيد</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card1 h-100">
+          <img src="assets/Medizinbedarf.jpg" class="card-img-top h-50" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">
+              اللوازم الطبية
+            </h5>
+            <p class="card-text">
+              سيارات الإسعاف، الأدوات الجراحية، الأسرة وغيرها من معدات المستشفيات، المواد الطبية،
+              هناك حاجة إلى المواد الجراحية وأجهزة الأشعة السينية والموجات فوق الصوتية والمواد التي يمكن التخلص منها والمزيد.
+              يجب أن تتاح للناس فرصة البقاء في وطنهم. ولهذا السبب تساعد HA بشكل مباشر في مناطق الأزمات.
+            </p>
+            <div class=" position-absolute bottom-0">
+              <small class="text-body-secondary">قراءة المزيد</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="empty-div"></div>
+  
+
+  <!--                            special cards                            -->
+  <h2 class="display-4 ms-4 mb-2 d-inline-block heading-colored">
+    شكر خاص هذا العام
+  </h2>
+  <section class="container ">
+    
+    <div class="row justify-content-between g-4">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card card2 shadow">
+          <img src="assets/images.png" class="card-img h-100" alt="...">
+          <div class="card-img-overlay over">
+            <h5 class="card-title display-6 text-light">
+              عن المتطوعين</h5>
+            <p class="card-text text-light mt-5">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>كانون الثاني ,2022</span> &nbsp; 
+            </p>
+            <div class="card-image ">
+              <img src="assets/images.png" class="h-50 w-75 rounded-start-circle ms-5" alt="">
+            </div>
+            <div class="d-flex justify-content-around mb-1">
+              <span class="text-light">سلام الصبرة </span>
+              <span class="text-light">متطوعة في شمال سوريا</span>
+            </div>
+          </div>
+          
+              
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card card2 shadow">
+          <img src="assets/thoughts.jpg" class="card-img h-100" alt="...">
+          <div class="card-img-overlay over">
+            <h5 class="card-title display-6 text-light">
+              عن منشئي المشاريع </h5>
+            <p class="card-text text-light mt-1">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>كانون الثاني ,2022</span> &nbsp; 
+            </p>
+            <div class="card-image ">
+              <img src="assets/thoughts.jpg" class="h-50 w-75 rounded-start-circle ms-5" alt="">
+            </div>
+            <div class="d-flex justify-content-around mt-2">
+              <span class="text-light">باسل شموط</span>
+              <span class="text-light">أنشا 100 مشروع</span>
+            </div>
+          </div>
+          
+              
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="card card2 shadow">
+          <img src="assets/3514a5a6c1762e96a24c2d21390febe7.jpg" class="card-img h-100" alt="...">
+          <div class="card-img-overlay over">
+            <h5 class="card-title display-6 text-light">
+              عن المتبرعين</h5>
+            <p class="card-text text-light">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>تشرين الثاني ,2021</span> &nbsp; 
+            </p>
+            <div class="card-image ">
+              <img src="assets/3514a5a6c1762e96a24c2d21390febe7.jpg" class=" h-50 w-75 rounded-start-circle ms-5" alt="">
+            </div>
+            <div class="d-flex justify-content-around mt-5">
+              <span class="text-light"> مؤسسة الحكمة</span>
+              <span class="text-light">تبرعت بملابس شتوية للأطفال</span>
+            </div>
+          </div>
+          
+              
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="empty-div"></div>
+
+  <!--                             latest news cards                           -->
+  <h2 class="display-4 ms-4 mb-2 d-inline-block heading-colored">
+    آخر أخبارنا
+  </h2>
+  <section class="container " dir="ltr">
+    
+    <div class="card c shadow-lg mb-3 rounded-3  ">
+      <div class="row g-0">
+        
+        <div class="col-md-5 position-relative ">
+          <div class="card-image-corners">
+          <img src="assets/childhood.jpg" class="img-fluid rounded-start " alt="...">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="card-body ">
+            <h5 class="card-title heading-colored fs-2">
+              عندما يتعلق الأمر بحماية الأطفال في مناطق الحرب
+            </h5>
+            <p class="card-text "><small class="text-muted">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>تشرين الأول, 2023</span> &nbsp;
+            </small></p>
+            <div class="card-div bg-success rounded-3 mb-1"></div>
+            <p class="card-text mb-3">تخيل أنك محاصر مع عائلتك في بلدة تحت الحصار.
+              الغذاء والوقود ينفدان. أطفالكم يعانون من الجوع والبرد والرعب من الغارات الجوية والمدفعية.
+              
+            </p>
+            <p class="card-text">
+              <a href=""  class=" link-underline link-underline-opacity-0 text-success"> قراءة المزيد &rarr;</a>  
+            </p>
+            <div class="text-info">
+              <a href="" class="text-info link-underline link-underline-opacity-0 "><i class="fa-regular fa-hashtag"></i><span>حرب</span></a>&nbsp;<a href="" class="link-underline link-underline-opacity-0 text-info"><i class="fa-regular fa-hashtag"></i><span>الدعم_الطبي</span></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="card mb-2 shadow-lg c rounded-3">
+      <div class="row g-0">
+        <div class="col-md-7">
+          <div class="card-body ">
+            <h5 class="card-title heading-colored fs-2">
+              ما هي الظروف التي يعيشها الأفغان المرحلون؟
+            </h5>
+            <p class="card-text "><small class="text-muted">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>أيلول, 2023</span> &nbsp;
+            </small></p>
+            <div class="card-div bg-success rounded-3 mb-1"></div>
+            <p class="card-text mb-3">
+              إن وضع النساء والفتيات في أفغانستان يمثل تحدياً استثنائياً
+              لا يمكن للعالم أن يتحمل إغفال الاهتمام بأفغانستان، التي لا تزال تعاني من عقود من الصراع والأزمة الاقتصادية والزلازل المدمرة الأخيرة.
+            </p>
+            <p class="card-text">
+              <a href=""  class=" link-underline link-underline-opacity-0 text-success">قراءة المزيد &rarr;</a>  
+            </p>
+            <div class="text-info">
+              <a href="" class="text-info link-underline link-underline-opacity-0 "><i class="fa-regular fa-hashtag"></i><span>الكوارث_الطبيعية</span></a>&nbsp;<a href="" class="link-underline link-underline-opacity-0 text-info"><i class="fa-regular fa-hashtag"></i><span>مساعدة_فورية</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 position-relative ">
+          <div class="card-image-corners1">
+          <img src="assets/afghanistan.webp" class="img-fluid rounded-end " alt="...">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="card c shadow-lg mb-3 rounded-3  ">
+      <div class="row g-0">
+        <div class="col-md-5 position-relative ">
+          <div class="card-image-corners">
+          <img src="assets/myanmar_crisis_rohingya_refugee_father_and_son_in_bangladesh.jpg" class="img-fluid rounded-start " alt="...">
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="card-body ">
+            <h5 class="card-title heading-colored fs-2">
+              ميانمار (بورما) إحاطة بشأن الأزمة
+            </h5>
+            <p class="card-text "><small class="text-muted">
+              <i class="fa-regular fa-calendar"></i> &nbsp; <span>نيسان ,2023</span> &nbsp;
+            </small></p>
+            <div class="card-div bg-success rounded-3 mb-1"></div>
+            <p class="card-text mb-2">
+              مهمتنا هي مساعدة الأشخاص الذين دمرت الصراعات والكوارث حياتهم وسبل عيشهم على التعافي والسيطرة على مستقبلهم.
+              أصبحت ميانمار أكثر أهمية من أي وقت مضى حيث يكافح الناس من أجل إعادة بناء حياتهم في أعقاب الكوارث الطبيعية والصراع الداخلي.
+            </p>
+            <p class="card-text">
+              <a href=""  class=" link-underline link-underline-opacity-0 text-success">قراءة المزيد &rarr;</a>  
+            </p>
+            <div class="text-info">
+              <a href="" class="text-info link-underline link-underline-opacity-0 "><i class="fa-regular fa-hashtag"></i><span>حرب</span></a>&nbsp;<a href="" class="link-underline link-underline-opacity-0 text-info"><i class="fa-regular fa-hashtag"></i><span>medical-support</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="empty-div"></div>
+
+  <!--                               contacts circles                              -->
+ 
+  <h2 class="display-4 ms-4 mb-4 d-inline-block heading-colored">
+    يمكنك متابعتنا
+  </h2>
+  <section class="container d-flex justify-content-around g-0 " dir="ltr">
+    <a href="https://facebook.com" target="_blank" class="d-block">
+    <div class="rounded-circle background-dropdown contacts" style="background-image: url('assets/icons8-facebook-100.png');">
+      
+    </div></a>
+
+    <a href="https://twitter.com" target="_blank" class="d-block">
+    <div class="rounded-circle background-dropdown contacts" style="background-image: url('assets/twitter_5969020.png');">
+      
+    </div></a>
+    <a href="https://youtube.com" target="_blank" class="d-block">
+    <div class="rounded-circle background-dropdown contacts" style="background-image: url('assets/2448085_334189-P9WEH4-125.jpg');"></div>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="d-block">
+    <div class="rounded-circle background-dropdown contacts" style="background-image: url('assets/linkedin_145807.png');"></div>
+    </a>
+    <a href="https://instagram.com" target="_blank" class="d-block">
+    <div class="rounded-circle background-dropdown contacts" style="background-image: url('assets/instagram-logo_4103007.png');"></div>
+    </a>
+    
+  
+    
+  </section>
+  
+  <section class="container   d-flex justify-content-around g-7" dir="ltr">
+    <div class="contacts1 me-3"></div>
+    <div class="contacts2 mx-3"></div>
+    <div class="contacts3 mx-3"></div>
+    <div class="contacts4 mx-3"></div>
+    <div class="contacts5 ms-3"></div> 
+  </section>
+
+  <div class="empty-div"></div>
+  
+  <!--                               footer                                           -->
+
+  <section class=" container h-25 border border-top-0 border-end-0 border-bottom-0 background-dropdown ">
+    <div class="container d-flex justify-content-around mt-5">
+    <h2 class=" text-muted mt-3">
+      تبرع الآن لإحداث تأثير ملموس
+    </h2>
+    <button class="btn px-5 my-2  btn-dark border border-1 rounded-3 background-dropdown text-light btn-lg fs-4">تبرع <img src="assets/icons8-heart-48.png" alt=""></button>
+   
+  </div>
+  
+  </section>
+   <div class="empty-div"></div>
+  <section class="container-fluid  background-dropdown">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-item-center">
+        <div class="col-5  ">
+          
+          <a href="https://googlemaps.com" target="_blank">
+            <img src="assets/icons8-map-marker-100.png" alt="" class="center d-block">
+          </a>
+        </div>
+        <div class="col-5">
+          <a href="https://efax.com" target="_blank">
+            <img src="assets/icons8-fax-100.png" alt="" class="center d-block"></a>
+        </div>
+
+      </div>
+      <div class="row  d-flex  justify-content-around">
+        <div class="col-4  mt-3">
+          <a href="" class="text-muted fs-3"><span>أفريقيا</span></a>
+        </div>
+        <div class="col-4 fs-3 text-muted ">
+          <span >1-408-999 8888</span>
+        </div>
+      </div>
+      <div class="row  d-flex  justify-content-around ">
+        <div class="col-4 ">
+          <a href="" class="text-muted fs-3 "><span >اسيا</span></a>
+        </div>
+        <div class="col-4 fs-3 text-muted">
+          <span>1-212-222 8888</span>
+        </div>
+      </div>
+      <div class="row  d-flex   justify-content-around">
+        <div class="col-4 mb-5 border border-2 border-danger">
+          <a href="" class="text-muted fs-3"><span>الشرق الأوسط</span></a>
+        </div>
+        <div class="col-4 mb-5 text-muted fs-3 border border-danger border-2">
+          <span>1-212-999 8888</span>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="container-fluid background-dropdown">
+      &copy;<span>الحقوق محفوظة لمنظمة HA</span>
+    </div>
+  
+    
+  <script src="js/script.js">
+
+  </script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
+  <script>
+  
+  </script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
